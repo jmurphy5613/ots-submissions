@@ -1,5 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   background-color: black;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  width: 70vw;
+  height: 100%;
+  padding-top: 5rem;
+}
+
+.form-title {
+  color: white;
+  font-family: 'Merriweather Sans', sans-serif;
 }
