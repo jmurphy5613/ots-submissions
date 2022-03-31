@@ -17,7 +17,7 @@ router.post('/add-submission', async(req, res) => {
         filmImages, 
         filmDescription, 
         bio, 
-        cedits, 
+        credits, 
         behindTheScenesLink, 
         websiteLink, 
         youtubeLink, 
@@ -26,7 +26,26 @@ router.post('/add-submission', async(req, res) => {
         tiktokLink  
     } = req.body;
     submissions.create({
-        submitterName: submitterName
+        submitterName: submitterName,
+        email: email,
+        filmTitle: filmTitle,
+        filmGenre: filmGenre,
+        releaseYear: releaseYear,
+        filmRuntime: filmRuntime,
+        country: country,
+        filmLink: filmLink,
+        filmTrailerLink: filmTrailerLink,
+        filmImages: filmImages,
+        filmDescription: filmDescription,
+        bio: bio,
+        credits: credits,
+        behindTheScenesLink: behindTheScenesLink,
+        websiteLink: websiteLink,
+        youtubeLink: youtubeLink,
+        instragramLink: instragramLink,
+        twitterLink: twitterLink,
+        tiktokLink: tiktokLink
+
     });
     res.send('Film submitted');
 });
